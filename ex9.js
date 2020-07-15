@@ -9,14 +9,14 @@ seja, que evite a reprovação do aluno. No caso de a nota ser 38, o arredondame
 e o aluno será aprovado.
  */
 
-const notaAlunos = [10, 20, 59, 90, 100, 39, 60, 17, 97, 38, 37, 21, 46, 93, 88]
+const notaAlunos = [10, 20, 59, 90, 100, 39, 60, 17, 97, 38, 37, 21, 46, 93, 88, 99]
 
 function sistemaDeNotas(notas) {
     notas.forEach( (item, index) => {
         if(notas[index] < 38) {
             console.log(`${index+1} - Reprovado | ${notas[index]}`)
-        } else if ( (notas[index] % 5) >=3) {
-            notas[index] = Math.ceil(notas[index])
+        } else if ( (notas[index] % 5) > 2) {
+            notas[index] = Math.round(notas[index] / 5) * 5
             console.log(`${index+1} - Aprovado | ${notas[index]}`)
         } else {
             console.log(`${index+1} - Aprovado | ${notas[index]}`)
