@@ -9,8 +9,10 @@ uma função que recebe um ano e calcula se ele é ano bissexto,
 let bissexto
 
 function anoBissexto(ano) {
-    if((ano % 400) === 0) return 
-    else if((ano %))
+    if((ano % 400) === 0) return `Esse ano é bissexto`
+    else if((ano % 100) === 0) return `Esse ano não é bissexto`
+    else if((ano % 4) === 0) return `Esse ano é bissexto`
+    else return `Esse ano não é bissexto`
 }
 
-anoBissexto()
+console.log(anoBissexto(2092))
