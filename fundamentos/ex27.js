@@ -3,7 +3,7 @@
 crianças e calcule se existe uma criança menor, caso exista se a criança menor ultrapassará a maior e em
 quantos anos isso acontecerá. Utilize centímetros para as unidades de medida.
 */
-
+//TODO: ex 27
 function calculoAltura(alturaAtual1, taxaDeCrescimentoAnual1, alturaAtual2, taxaDeCrescimentoAnual2) {
     let alturaComTaxaDeCrescimento = 0
     let anosParaFicarMaior = 0
