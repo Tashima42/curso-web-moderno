@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="http://files.cod3r.com.br/curso-web/tree.css" </head>
+
+<body>
+    <h1>Projeto</h1>
+    <ul class="tree">
+        <li>
+            <span class="hide">backend</span>
+            <ul>
+                <li>
+                    <span class="hide">App</span>
+                    <ul>
+                        <li>produto.js</li>
+                        <li>usuario.js</li>
+                        <li>venda.js</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="hide">config</span>
+                    <ul>
+                        <li>banco.js</li>
+                        <li>rotas.js</li>
+                        <li>servidor.js</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <span class="hide">frontend</span>
+            <ul>
+                <li>
+                    <span class="hide">public</span>
+                    <ul>
+                        <li>app.css</li>
+                        <li>app.js</li>
+                        <li>index.html</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+<script>
+    document.querySelectorAll('.hide').forEach(folder => {
+        folder.onclick = function(e) {
+            const ul = folder.nextElementSibling;
+            const ulDisplay = ul.style.display
+            ul.style.display = ulDisplay === 'none' ? 'block' : 'none'
+        }
+    })
+</script>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>Produtos</caption> 
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>iPad</td>
+                <td>3289,0</td>
+                <td>5</td>
+                <td>1645,0</td>
+            </tr>
+            <tr>
+                <td>Sansung</td>
+                <td>2649,00</td>
+                <td>8</td>
+                <td>21192,00</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>37647,00</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+        thead tr {
+            border-bottom: solid 3px #444;
+        }
+        tbody tr:hover {
+            background-color: #dedede;
+        }
+        tfoot {
+            background-color: #414141;
+            color: #fff
+        }
+    </style>
+
+</body>
+</html>

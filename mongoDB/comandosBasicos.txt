@@ -1,0 +1,14 @@
+> mongo  //Abre a aplicação
+> show dbs //Mostra os bancos de dados existentes
+> use nome-bd //Seleciona um BD (mesmo que não exista)
+> db.createCollection('nome-coleção') //Cria uma coleção 
+> show collections //Mostra as coleções existentes
+//MongoDB é case sensitive
+> db.nomeColecao.drop() //Exclui a coleção
+> cls //limpa o terminal
+> db.nomeColecao.insert({nome: "Acre", regiao: "Norte"}) //Adiciona dados a uma coleção
+> db.nomeColecao.save({nome: "Alagoas", sigla: "AL", regiao: "Nordeste", populacao: 332200}) //O mongoDB também aceita que os "objetos" dentro das coleções tenham diferentes atributos
+> db.nomeColecao.find() //Mostra os dados de uma coleção
+> db.nomeColecao.find().pretty() //Mostra os dados em um formato mais parecido com JSON para melhorar a visualização
+
+> db.nomeColecao.find({chave: "atributo"}) //Mostra apenas os elementos que contem aquela chave com aquele atributo
